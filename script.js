@@ -32,6 +32,11 @@ month.innerHTML = months[date.getMonth()]
 year.innerHTML = date.getFullYear()
 day.innerHTML = days[date.getDay()]
 
+const storedTasks = localStorage.getItem('tasks');
+if (storedTasks) {
+    tasks = JSON.parse(storedTasks);
+}
+
 renderTasks()
 
 function saveTasks() {
