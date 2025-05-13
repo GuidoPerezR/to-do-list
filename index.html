@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador de Tareas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <meta name="description"
+        content="Organiza tus tareas diarias. Añade, edita y elimina tus pendientes del día a día de forma fácil y sencilla">
+
+    <meta property="og:title" content="Administrador de Tareas">
+    <meta property="og:description"
+        content="Organiza tus tareas diarias. Añade, edita y elimina tus pendientes del día a día de forma fácil y sencilla">
+    <meta property="og:image" content="https://guidoperezr.github.io/to-do-list/og-image.png">
+    <meta property="og:image:alt" content="Imagen del administrador de tareas mostrando un ejemplo con tareas diarias">
+    <meta name="robots" content="index, follow">
+
+</head>
+
+<body>
+    <main>
+        <section class="todo-list-container">
+            <div class="todo-list">
+                <header class="todo-list-header">
+                    <div>
+                        <p id="number-day"></p>
+                        <div>
+                            <p id="month"></p>
+                            <p id="year"></p>
+                        </div>
+                    </div>
+                    <p id="day"></p>
+                </header>
+                <div class="tasks-list-container" id="tasks-list-container">
+                    <div>
+                        <header>
+                            <h2 class="tasks-list-header">Tareas pendientes</h2>
+                        </header>
+                        <div class="tasks-list-content" id="pending-tasks-content">
+                        </div>
+                    </div>
+                    <div>
+                        <header>
+                            <h2 class="tasks-list-header">Tareas completadas</h2>
+                        </header>
+                        <div>
+                            <div class="tasks-list-content" id="completed-tasks-content">
+                            </div>
+                        </div>
+                    </div>
+                    <a class="add-task-button" id="add-task-button"><i class="fa-solid fa-plus"></i></a>
+                </div>
+                <div class="add-task-container" id="add-task-container">
+                    <div class="add-task" id="add-task-content">
+                        <header>
+                            <h2>Añadir Tarea</h2>
+                        </header>
+                        <form class="add-task-form" id="add-task-form">
+                            <input required type="text" placeholder="Escribe una tarea" id="task-text">
+                            <button type="submit">Añadir</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="edit-task-container" id="edit-task-container">
+                    <div class="edit-task" id="edit-task-content">
+                        <header>
+                            <h2>Editar Tarea</h2>
+                        </header>
+                        <form class="edit-task-form" id="edit-task-form">
+                            <div class="edit-task-content">
+                                <input required type="text" placeholder="Escribe una tarea" id="edit-task-text">
+                                <small id="edit-small-text"></small>
+                            </div>
+                            <button type="submit">Guardar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
