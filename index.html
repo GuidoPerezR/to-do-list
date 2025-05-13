@@ -41,23 +41,25 @@
                     <p id="day"></p>
                 </header>
                 <div class="tasks-list-container" id="tasks-list-container">
-                    <div>
-                        <header>
-                            <h2 class="tasks-list-header">Tareas pendientes</h2>
-                        </header>
-                        <div class="tasks-list-content" id="pending-tasks-content">
-                        </div>
-                    </div>
-                    <div>
-                        <header>
-                            <h2 class="tasks-list-header">Tareas completadas</h2>
-                        </header>
+                    <div class="task-list-content">
                         <div>
-                            <div class="tasks-list-content" id="completed-tasks-content">
+                            <header>
+                                <h2 class="tasks-list-header">Tareas pendientes</h2>
+                            </header>
+                            <div class="tasks-list-items-content" id="pending-tasks-content">
                             </div>
                         </div>
+                        <div>
+                            <header>
+                                <h2 class="tasks-list-header">Tareas completadas</h2>
+                            </header>
+                            <div>
+                                <div class="tasks-list-items-content" id="completed-tasks-content">
+                                </div>
+                            </div>
+                        </div>
+                        <a class="add-task-button" id="add-task-button"><i class="fa-solid fa-plus"></i></a>
                     </div>
-                    <a class="add-task-button" id="add-task-button"><i class="fa-solid fa-plus"></i></a>
                 </div>
                 <div class="add-task-container" id="add-task-container">
                     <div class="add-task" id="add-task-content">
