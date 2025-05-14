@@ -130,7 +130,7 @@ function renderTasks() {
     const completedTasks = tasks.filter(task => task.completed);
 
     if (pendingTasks.length === 0) {
-        createEmptyMessage('No hay tareas pendientes', pendingTasksContent)
+        createEmptyMessage('No tienes tareas pendientes. ¡Relájate un rato!💤', pendingTasksContent)
     } else {
         pendingTasks.forEach(task => {
             createTaskElement(task, pendingTasksContent, false)
@@ -138,7 +138,7 @@ function renderTasks() {
     }
 
     if (completedTasks.length === 0) {
-        createEmptyMessage('No hay tareas completadas', completedTasksContent)
+        createEmptyMessage('No hay tareas completadas. ¡Echale ganas padre!💪', completedTasksContent)
     } else {
         completedTasks.forEach(task => {
             createTaskElement(task, completedTasksContent, true)
